@@ -17,7 +17,6 @@ Data used : <b><a href="https://www.kaggle.com/uciml/sms-spam-collection-dataset
 <li>The best model found is <b>support vector machine<b>with 97.9% validation accuracy.
 <li>It classifies 99.5% non-spam message correctly (Model precision)
 <li>It classifies the 85.3% of spam messages correctly (Model recall)
-<br>
-  
-## Multinomial Naive Bayes Classifier:
-The multinomial Naive Bayes classifier is suitable for classification with discrete features (e.g., word counts for text classification). The multinomial distribution normally requires integer feature counts. However, in practice, fractional counts such as tf-idf may also work.
+
+## Algorithms: 
+Multinomial Naive Bayes Classifier: The multinomial Naive Bayes classifier is suitable for classification with discrete features (e.g., word counts for text classification). The multinomial distribution normally requires integer feature counts. However, in practice, fractional counts such as tf-idf may also work.
