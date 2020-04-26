@@ -23,11 +23,11 @@ Data used : <b><a href="https://www.kaggle.com/uciml/sms-spam-collection-dataset
 
 Document/Text classification is one of the important and typical task in supervised machine learning (ML). Assigning categories to documents, which can be a web page, library book, media articles, gallery etc. has many applications like e.g. spam filtering, email routing, sentiment analysis etc. We will be using some Nlp steps for text preprocessing and then multinomaial naive bayes classifier & SVM for classification.
 
-<ul><b><li>Multinomial Naive Bayes Classifier:</b> 
+<ul><li>Multinomial Naive Bayes Classifier: 
 This classifier is suitable for classification with discrete features (e.g., word counts for text classification). The multinomial distribution normally requires integer feature counts. However, in practice, fractional counts such as tf-idf may also work.
   <a href="https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html">more info</a>
   
-<b><li> Support vector machines:</b>  
+<li> Support vector machines: 
 SVMs are a set of supervised learning methods used for classification, regression and outliers detection.They are Effective in high dimensional spaces.Effective in cases where number of dimensions is greater than the number of samples.Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.Different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.
  <a href="https://scikit-learn.org/stable/modules/svm.html#">more info</a>
 
