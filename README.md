@@ -26,6 +26,7 @@ Document/Text classification is one of the important and typical task in supervi
 <ul><li><b>Multinomial Naive Bayes Classifier:</b> 
 This classifier is suitable for classification with discrete features (e.g., word counts for text classification). The multinomial distribution normally requires integer feature counts. However, in practice, fractional counts such as tf-idf may also work.
   <a href="https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html">more info</a>
+  
 <li><b>Support vector machines:</b> 
 SVMs are a set of supervised learning methods used for classification, regression and outliers detection.They are Effective in high dimensional spaces.Effective in cases where number of dimensions is greater than the number of samples.Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.Different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.
  <a href="https://scikit-learn.org/stable/modules/svm.html#">more info</a>
