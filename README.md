@@ -82,24 +82,23 @@ data['msgs']=data['msgs'].apply(lambda x: ' '.join([word for word in x.split() i
 -scikit-learn library offers easy-to-use tools to perform both tokenization and feature extraction of your text data
 - **Since we cannot work with words directly we convert text to fixed-length vectors of numbers - also called Bag-of-words model** 
 #### **So Intution is to input Vectors --> model -->output class(spam/ham)**
--The basic idea of BoW is to take a piece of text and count the frequency of the words in that text. It is important to note that the BoW concept treats each word individually and the order in which the words occur does not matter.
 
-- Using a process which we will go through now, we can convert a collection of documents to a matrix, with each document being a row and each word(token) being the column, and the corresponding (row,column) values being the frequency of occurrence of each word or token in that document.
-
-#### **2. Vectorisation:**
-- This can be done by assigning each word a unique number. 
+#### **2. Vectorization:**
+- Using BOW model,we assign each word a unique number. 
 - Then any document we see can be encoded as a fixed-length vector with the length of the vocabulary of known words. 
 - The value in each position in the vector could be filled with a count or frequency of each word in the encoded document.
 - An encoded vector is returned with a length of the entire vocabulary and an integer count for the number of times each word appeared in the document.
+```
 -  eg. The cat ate the mouse 
             attribute name assigned to words : The ->1 , cat ->2 , ate->3 , mouse->4
             considering the above sentence -count the occurance of each word 
             so vector is [2 1 1 1]
-            
--  The above logic is applied for complete corpus(text dataset)
+```            
+-The above logic is applied for complete corpus(text dataset)
 -IMP: First stopwords are removed before vectorisation.
+
 (Note: This is just a basic intution for understanding in detail pls refer <html><a href="https://machinelearningmastery.com/prepare-text-data-machine-learning-scikit-learn/"><b>this link</b></a></html>) 
-            
+
 #### **3. Scikit learn Count Vectorizers:** 
 - Count Vectorizers provides a simple way to both tokenize a collection of text documents and build a vocabulary of known words, but also to encode new documents using that vocabulary.    
 #### Below is an example for reference:
